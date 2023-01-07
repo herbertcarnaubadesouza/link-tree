@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:400,100,300,500,700,900');
+
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+#avoGeral{
+    height: 100%;
+    margin-inline: auto;
+    position: absolute;
+    top: 10px;    
+    width: 100%;
+}
+
+#pai-circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circulo-foto {
+    box-shadow: 0px 0px 4px 4px #00ffe8;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 1.3vh;
+    background-image: url(assets/imgs/WhatsApp\ Image\ 2023-01-06\ at\ 14.18.10.jpeg);
+    background-size: cover;
+}
+
+#paiGeral{
+    position: absolute;
+}
+
+#paiLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.8vh;
+}
+
+#linkInstagram {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#paiBotoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  z-index: 1;
+}
+
+#botao1,
+#botao2,
+#botao3,
+#botao4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 432px;
+    height: 44px;
+    background-color: #aa00e9;
+    margin-top: 2.6vh;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 18px 1px rgb(34 228 143 / 65%);
+}
+
+#botao1:hover, #botao2:hover,#botao3:hover,#botao4:hover {
+  animation-name: wobble-skew;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: top left, bottom right, top right, bottom left;
+}
+
+@keyframes wobble-skew {
+  25% {
+    transform: translate3d(-1%, 0, 0) skewX(12deg);
+  }
+  50% {
+    transform: translate3d(1%, 0, 0) skewX(-12deg);
+  }
+  75% {
+    transform: translate3d(-1%, 0, 0) skewX(12deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+#iconeYT {
+    margin-left: 1px;
+}
+
+#canalYT {
+    margin-left: 25%;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#iconeTIKTOK{
+    margin-left: 9%;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#spanBotao {
+    display: flex;
+    align-items: center;
+    width: 384px;
+    height: 20px;
+}
+
+#botao1 span, #botao2 span, #botao3 span {
+    color: white;
+    display: flex;
+}
+
+#botao4 span, #botao2 span, #botao3 span {
+    color: white;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+#iconesRedes {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 15px;
+    margin-top: 3vh;
+}
+
+#icone3{
+    max-width: 24px;
+    object-fit: cover;
+}
+
+#icone1:hover{
+    background-color: aa00e9;
+}
+
+@media (max-width: 586px) {
+
+    #botao1,
+    #botao2,
+    #botao3,
+    #botao4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85vw;
+        height: 6vh;
+        background-color: #aa00e9;
+        margin-top: 2.6vh;
+        border-radius: 25px;
+    }
+
+
+    #botao4 span{
+        text-align: center;
+        font-weight: 400;
+    }
+
+    #canalYT {
+        margin-left: 10%;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #textoTIKTOK{
+        margin-left: 11%;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #iconeTIKTOK{
+        max-width: 24px;
+        object-fit: cover;
+    }
+
+    #iconeYT {
+        margin-left: 10%;
+    }
+}
+
+
+
+
