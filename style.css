@@ -102,23 +102,26 @@ body {
 }
 
 
-#iconeYT {
-    margin-left: 1px;
-}
-
 #canalYT {
     margin-left: 25%;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
 
-#iconeTIKTOK{
-    margin-left: 9%;
+#textoTIKTOK {
+    margin-left: 25%;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
 
-#spanBotao {
+#iconeTIKTOK{
+    max-width: 24px;
+    object-fit: cover;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.spanBotao {
     display: flex;
     align-items: center;
     width: 384px;
@@ -149,9 +152,7 @@ body {
     object-fit: cover;
 }
 
-#icone1:hover{
-    background-color: aa00e9;
-}
+
 
 @media (max-width: 586px) {
 
@@ -176,13 +177,13 @@ body {
     }
 
     #canalYT {
-        margin-left: 10%;
+        margin-left: 25%;
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
     }
 
     #textoTIKTOK{
-        margin-left: 11%;
+        margin-left: 25%;
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
     }
@@ -192,9 +193,51 @@ body {
         object-fit: cover;
     }
 
-    #iconeYT {
+}
+
+@media (max-width: 395px) {
+
+    #botao1,
+    #botao2,
+    #botao3,
+    #botao4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85vw;
+        height: 6vh;
+        background-color: #aa00e9;
+        margin-top: 2.6vh;
+        border-radius: 25px;
+    }
+
+
+    #botao4 span{
+        text-align: center;
+        font-weight: 400;
+    }
+
+    #canalYT {
+        margin-left: 20%;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #textoTIKTOK{
+        margin-left: 20%;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #iconeTIKTOK{
+        max-width: 24px;
+        object-fit: cover;
+    }
+
+    .iconeGeral{
         margin-left: 10%;
     }
+
 }
 
 
