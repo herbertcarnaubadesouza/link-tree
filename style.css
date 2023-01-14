@@ -190,6 +190,7 @@ a{
     #botao1 span, #botao2 span, #botao3 span{
         justify-content: space-around;
         padding-inline: 0px;
+        gap: 14px;
     }
 
 
@@ -241,13 +242,11 @@ a{
     }
 
     #canalYT {
-        margin-left: 20%;
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
     }
 
     #textoTIKTOK{
-        margin-left: 20%;
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
     }
@@ -255,11 +254,7 @@ a{
     #iconeTIKTOK{
         max-width: 24px;
         object-fit: cover;
-    }
-
-    .iconeGeral{
-        margin-left: 10%;
-    }
+    }    
 
 }
 
