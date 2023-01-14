@@ -58,7 +58,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-  z-index: 1;
+    z-index: 1;
+    cursor: pointer;
 }
 
 #botao1,
@@ -75,6 +76,7 @@ body {
     border-radius: 25px;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0px 0px 18px 1px rgb(34 228 143 / 65%);
+    z-index: 99999999;
 }
 
 #botao1:hover, #botao2:hover,#botao3:hover,#botao4:hover {
@@ -103,13 +105,13 @@ body {
 
 
 #canalYT {
-    margin-left: 25%;
+    
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
 
 #textoTIKTOK {
-    margin-left: 25%;
+    
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
@@ -131,12 +133,16 @@ body {
 #botao1 span, #botao2 span, #botao3 span {
     color: white;
     display: flex;
+    justify-content: center;
+    padding-inline: 30px;
+    align-items: center;
 }
 
 #botao4 span, #botao2 span, #botao3 span {
     color: white;
     display: flex;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 #iconesRedes {
@@ -153,6 +159,11 @@ body {
 }
 
 
+a{
+    text-decoration: none;
+}
+
+
 
 @media (max-width: 586px) {
 
@@ -161,13 +172,24 @@ body {
     #botao3,
     #botao4 {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         width: 85vw;
         height: 6vh;
         background-color: #aa00e9;
         margin-top: 2.6vh;
         border-radius: 25px;
+    }
+
+    #botao1,
+    #botao2,
+    #botao3{
+        padding-inline: 60px;
+    }
+
+    #botao1 span, #botao2 span, #botao3 span{
+        justify-content: space-around;
+        padding-inline: 0px;
     }
 
 
@@ -177,13 +199,13 @@ body {
     }
 
     #canalYT {
-        margin-left: 25%;
+        
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
     }
 
     #textoTIKTOK{
-        margin-left: 25%;
+        
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
     }
@@ -211,6 +233,7 @@ body {
         border-radius: 25px;
     }
 
+   
 
     #botao4 span{
         text-align: center;
