@@ -121,6 +121,15 @@ body {
     object-fit: cover;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    margin-left: -2px;
+}
+
+#iconeWHATS{
+    max-width: 24px;
+    object-fit: cover;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 .spanBotao {
@@ -216,6 +225,11 @@ a{
         object-fit: cover;
     }
 
+    #iconeWHATS{
+        max-width: 24px;
+        object-fit: cover;
+    }
+
 }
 
 @media (max-width: 395px) {
@@ -252,6 +266,11 @@ a{
     }
 
     #iconeTIKTOK{
+        max-width: 24px;
+        object-fit: cover;
+    }
+
+    #iconeWHATS{
         max-width: 24px;
         object-fit: cover;
     }    
